@@ -71,7 +71,7 @@ class Command(bw.BWExpander):
         self.__history.bw_modify_font(self.__font)
         self.__history.hide_all()
         self.__history.set_no_show_all(True)
-        self.__history.bw_set_auto_scroll(True)
+        self.__history.bw_set_scroll(True)
 
         self.__table.bw_attach_next(self.__icon, gtk.FILL, gtk.FILL)
         self.__table.bw_attach_next(self.__entry)

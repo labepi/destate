@@ -1,0 +1,36 @@
+Destate 0.3
+-----------
+
+o Creation of Operations.py package with NFA2DFA algorithm.
+
+o Added support for NFA (Non-deterministic Finite Automaton).
+
+
+Destate 0.2
+-----------
+
+o Added information panel of automaton.
+
+o Fix bug caused by gtk.gdk.PixbufLoader that don't recognize image type in
+  Windows. Now gtk.gdk.pixbuf_new_from_file() is used (thanks to IndianZ).
+
+o Added support to state's name that haves comma.
+
+o Added options to open, save as save as automaton as XML file.
+
+o Added new version of XMLTreeParser.py called XMLHandler.py.
+
+o Added new version of bestwidgets.
+
+o Added multi-visualization support.
+
+o Added command icon to indicate if command is accepted by automaton.
+
+o Change destate.py file name to destate.pyw to application starts with no
+  command prompt on Windows.
+
+
+Destate 0.1
+-----------
+
+o First release on 29th February 2008.

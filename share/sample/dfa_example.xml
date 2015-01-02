@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automaton start="A" name="DFA Example">
+    <states>
+        <state name="A"/>
+        <state name="C"/>
+        <state name="B" option="final"/>
+    </states>
+    <events>
+        <event name="y"/>
+        <event name="x"/>
+        <event name="z"/>
+    </events>
+    <transitions>
+        <transition to="B" when="y" from="B"/>
+        <transition to="C" when="z" from="A"/>
+        <transition to="A" when="x" from="B"/>
+        <transition to="A" when="x" from="A"/>
+        <transition to="B" when="y" from="A"/>
+        <transition to="A" when="x" from="C"/>
+        <transition to="B" when="y" from="C"/>
+        <transition to="C" when="z" from="C"/>
+        <transition to="C" when="z" from="B"/>
+    </transitions>
+    <comment>Destate DFA (Deterministic Finite Automaton) example.</comment>
+</automaton>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automaton start="A" name="NFA Example">
+    <states>
+        <state name="A"/>
+        <state name="C"/>
+        <state name="B" option="final"/>
+    </states>
+    <events>
+        <event name="e"/>
+    </events>
+    <lambdas>
+        <lambda to="B" from="A"/>
+        <lambda to="B" from="C"/>
+    </lambdas>
+    <transitions>
+        <transition to="B" when="e" from="A"/>
+        <transition to="C" when="e" from="A"/>
+    </transitions>
+    <comment>Destate NFA (Non-deterministic Finite Automaton) example.</comment>
+</automaton>

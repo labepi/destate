@@ -90,23 +90,23 @@ class NFA2DFA:
 
             for state in states:
 
-                dfa.add_state(",".join(state))
+                dfa.add_state("_".join(state))
 
                 for s in state:
 
                     if s in self.__nfa.get_final_states():
 
-                        dfa.add_final_state(",".join(state))
+                        dfa.add_final_state("_".join(state))
                         break
 
-            dfa.set_start_state(",".join(start_state))
+            dfa.set_start_state("_".join(start_state))
 
             for ((s, e), n) in transitions:
 
                 dfa.add_event(e)
-                dfa.add_transition(",".join(s),
+                dfa.add_transition("_".join(s),
                                    e,
-                                   ",".join(n))
+                                   "_".join(n))
 
             return dfa
 
